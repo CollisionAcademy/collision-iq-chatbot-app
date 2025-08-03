@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Collision IQ Chatbot</title>
+  <script defer src="/app.js"></script> <!-- ✅ THIS GOES HERE -->
+
+  <style>
+    body { font-family: sans-serif; padding: 2rem; background: #f9f9f9; }
+    #chat { max-width: 600px; margin: auto; background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 0 10px #ccc; }
+    .msg { margin-bottom: 0.5rem; }
+    .user { font-weight: bold; color: #1976d2; }
+    .bot { font-weight: bold; color: green; }
+    input[type="text"] { width: 80%; padding: 0.5rem; }
+    button { padding: 0.5rem; }
+  </style>
+</head>
+<body>
+  <div id="chat">
+    <h1>Collision IQ Chatbot 🚗💬</h1>
+    <div id="messages"></div>
+    <input type="text" id="messageInput" placeholder="Type your message..." />
+    <button id="sendBtn">Send</button>
+    <div id="status">Connecting to Firebase...</div>
+  </div>
+</body>
+</html>
